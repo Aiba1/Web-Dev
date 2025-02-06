@@ -22,6 +22,11 @@ function addTask() {
     }
     inputBox.value = '';
 }
+function deleteAll(){
+        let listContainer = this.document.getElementById("list");
+        listContainer.innerHTML="";
+    }
+
 
 listContainer.addEventListener('click', function (e) {
     if(e.target.tagName === "LI") {
